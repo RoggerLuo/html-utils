@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" style="height:100%">
+
+<head>
+    <title>React Starter Kit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    .btn {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+    }
+    </style>
+</head>
+
+<body style="height:100%;margin:0; overflow: hidden;">
+    
+    <img src="./beijing.jpg" id="background_img" />
+    <!-- style="height:100%" -->
+    <img src="./sign_btn.png" id="btn" class="btn" />
+</body>
+<script type="text/javascript">
+const widthRate = 0.2616
+const top_width_rate = 1.3528
+
+const button = document.getElementById('btn')
+const background_img = document.getElementById('background_img')
+
+
+const topDistance = top_width_rate * document.body.clientWidth
+
+background_img.style.width = document.body.clientWidth + "px"
+const diameter = document.body.clientWidth * widthRate
+button.style.width = diameter + "px"
+button.style.height = diameter + "px"
+button.style.left = "51.5%"
+button.style.top = topDistance + "px"
+
+</script>
+
+</html>
