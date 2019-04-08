@@ -1,4 +1,7 @@
-text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
-max-width: 100px;
+import styled from 'styled-components'
+const EllipsisSpan = styled.span`
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100px;
+`
